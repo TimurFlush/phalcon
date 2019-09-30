@@ -110,3 +110,7 @@ $di->setShared('session', function () {
 
     return $session;
 });
+
+$di->setShared('router', function () {
+    return require __DIR__ . '/router.php';
+});
